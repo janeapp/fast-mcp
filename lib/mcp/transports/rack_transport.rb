@@ -487,7 +487,7 @@ module FastMcp
       # Handle message POST request
       def handle_message_request(request)
         @logger.debug('Received message request')
-        return method_not_allowed_response unless request.post?
+        # return method_not_allowed_response unless request.post?
 
         begin
           process_json_request(request)
